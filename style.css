@@ -38,6 +38,13 @@ p, .navbar-light .navbar-nav .nav-link {
     max-width: 1400px;
     margin: auto;
 }
+h1, h2, h3, h4, h5{
+    font-family: Montserrat-Bold;
+}
+body, button{
+    font-size: 15px;
+    font-family: Montserrat-Light;
+}
 body, html{
    padding: 0;
    margin: 0;
@@ -225,15 +232,15 @@ body, html{
     background-image: url(images/background-image-2.png);
     overflow: hidden;
 }
-.custom-img-footer-container{
+.custom-bkg-imgs{
     position: relative;
     max-width: 1500px;
-    margin-top: -100px;
+    margin-top: -150px;
     background-image: url(images/background-footer.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
-.custom-img-container{
+.custom-img-cont{
     margin: 0;
     margin-top: -110px;
     padding: 0;
@@ -242,7 +249,7 @@ body, html{
     margin: 0;
     margin-top: -65px;
 }
-.custom-img-container img, .custom-perso-info-box h4, .custom-perso-info-box h5{
+.custom-img-cont img, .custom-perso-info-box h4, .custom-perso-info-box h5{
     margin: 0;
     padding: 0;
 }
@@ -277,7 +284,8 @@ body, html{
 }
 .custom-horizontal-line{
     background-color:rgb(55, 119, 255);
-    width: 80%;
+    width: 95%;
+    max-width: 1150px;
     height: 1px;
     margin: auto;
     margin-top: 200px;
@@ -297,6 +305,40 @@ ul{
 }
 
 @media screen and (max-width: 1000px){
+    .custom-respo-1{
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        padding-left: 12px;
+    }
+    .custom-respo-2{
+        width: 35%;
+        padding: 0;
+        padding-right: 12px;
+    }
+    .custom-respo-3{
+        width: 100%;
+        margin-top: 70px;
+    }
+    .custom-respo-3 .custom-box1{
+        max-width: 100%;
+    }
+    .custom-respo-3 .custom-box1{
+        width: 100%;
+    }
+    
+    .custom-box-color1{
+        width: 49%;
+    }
+    .custom-box-color3{
+        width: 49%;
+    }
+    .custom-box-color2{
+        width: 100%;
+    } 
+
+
     .custom-box-profile{
         width: 32%;
     }
@@ -310,9 +352,10 @@ ul{
         padding: 3px;
     }
     .custom-ba h1{
-        font-family: var(--bs-font-sans-serif);
+        font-family: Montserrat-Bold;
         font-size: calc(1.375rem + 1.5vw);
     }
+
     /*hide custom-box-hidden*/
     .custom-bh{
         padding: 0;
@@ -324,6 +367,13 @@ ul{
     .custom-bh h1{
         font-size: 0;
     }
+    .custom-half{
+        margin-top: 70px;
+        min-width: 50%;
+    }
+    .custom-res{
+        margin-top: 70px;
+    }
     /*end code*/
 }
 @media screen and (max-width: 992px){
@@ -333,22 +383,59 @@ ul{
     .custom-box1{
         max-width: 100%;
     }
-    .custom-mb{
-        margin-bottom: 20px;
-    }
 }
 @media screen and (max-width: 800px){
     .custom-box-4{
         width: 100%;
-        margin-top: 80%;
+        margin-top: 30px;
+    }
+    .custom-img-pos{
+        width: 0;
+        height: 0;
+        left: 0;
+    }
+    .trusted-by{
+        height: 400px;
+    }
+    .custom-ba.custom-mbt {
+        margin-top: 70px;
+    }
+    .col-md-6.custom-box-4 {
+        margin-top: 70px;
+
+    }
+    .custom-bkg-imgs{
+        margin-top: 0;
     }
 }
 @media screen and (max-width: 765px){
+    .custom-bp{
+        margin-top: 70px;
+    }
+    .custom-respo-1{
+        width: 100%;
+        padding-right: 12px;
+    }
+    .custom-respo-2{
+        width: 100%;
+        padding-left: 12px;
+    }
     .custom-box-profile{
         width: 48%;
     }
+    .custom-mb{
+        margin-bottom: 20px;
+    }
+    
 }
 @media screen and (max-width: 500px){
+    .custom-box-color1{
+        width: 99%;
+    }
+    .custom-box-color3{
+        width: 99%;
+    }
+  
     .custom-box-profile{
         width: 99%;
     }
